@@ -3,7 +3,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.MainPage;
 import pages.WebTablesPage;
-import utils.User;
+import model.User;
 
 public class  TablesTest extends BaseTest {
 
@@ -13,13 +13,12 @@ public class  TablesTest extends BaseTest {
     void testTables(User user){
         MainPage mainPage = new MainPage();
         WebTablesPage webTablesPage = new WebTablesPage();
-        int defaultNumberOfRows;
 
         mainPage.scrollDownToAlertFrameWindowsButton();
         mainPage.clickElementsButton();
         webTablesPage.clickWebTablesButton();
         Assert.assertTrue(webTablesPage.isPageOpened(), "Web Table Menu has not been opened!");
-        defaultNumberOfRows = webTablesPage.getNumberOfRowsWithData();
+        int defaultNumberOfRows = webTablesPage.getNumberOfRowsWithData();
         webTablesPage.clickAddButton();
         Assert.assertTrue(webTablesPage.isRegistrationFormOpen(), "Registration Form has not been opened!");
         webTablesPage.fillRegistrationForm(user);

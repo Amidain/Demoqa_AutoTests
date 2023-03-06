@@ -6,7 +6,7 @@ import elements.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.Log;
-import utils.User;
+import model.User;
 
 import java.util.List;
 

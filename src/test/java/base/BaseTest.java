@@ -7,7 +7,7 @@ import utils.DriverUtils;
 import drivers.WebDriverFactory;
 import utils.Log;
 import utils.TestDataReader;
-import utils.User;
+import model.User;
 
 public abstract class BaseTest {
      @BeforeTest
