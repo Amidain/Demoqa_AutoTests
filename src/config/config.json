@@ -1,0 +1,6 @@
+{
+  "explicit_waiting_time": "20",
+  "main page" : "https://demoqa.com/",
+  "current-driver" : "Chrome",
+  "browser-mode" : "--incognito"
+}

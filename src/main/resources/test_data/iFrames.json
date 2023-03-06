@@ -1,0 +1,5 @@
+{
+  "frames-main-frame": "frame1",
+  "frames-second-frame": "frame2",
+  "nested-frames-parent-frame": "frame1"
+}
